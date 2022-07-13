@@ -1,13 +1,13 @@
 export interface ICommentData {
-    readonly id?: number;
-    readonly title: string;
-    readonly content: string;
-    readonly author: string;
-    readonly createdAt?: Date | string;
+  readonly id?: number;
+  readonly title: string;
+  readonly content: string;
+  readonly author: string;
+  readonly createdAt?: Date | string;
 }
 
 export interface IComment extends ICommentData {
-    validate(): boolean;
+  validate(): boolean;
 }
 
 export const COMMENTS_MAX_TITLE_LENGTH = 10;
